@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Minijuego2/Barra_Vida.uss?fileID=7433441132597879392&amp;guid=5b37b6f761cc6fa4b8da74527c35e09a&amp;type=3#Barra_Vida"/>
+    <ui:VisualElement name="Contenedor_Vida" style="flex-grow: 1; width: 20%; min-width: 20%; max-width: 20%; height: 45%; min-height: 45%; max-height: 45%;">
+        <ui:ProgressBar value="100" title="Vida" name="Vida" class="vida" style="-unity-font-definition: url(&quot;project://database/Assets/BoldPixels/Assets/font/BoldPixels.otf?fileID=12800000&amp;guid=19b9bfe81b147ba4f91b639e7c1b07d9&amp;type=3#BoldPixels&quot;);"/>
+    </ui:VisualElement>
+</ui:UXML>

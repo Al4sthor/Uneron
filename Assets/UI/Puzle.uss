@@ -1,0 +1,211 @@
+.contenedor {
+    flex-grow: 1;
+    background-color: rgb(250, 250, 250);
+    min-width: 100%;
+    max-width: 100%;
+    align-self: center;
+    transition-duration: 0.2s;
+    background-image: url("project://database/Assets/UI/Texturas%20UI/Fondo_UI.jpeg?fileID=21300000&guid=f00d935a13960614fb4aafd2b7118c43&type=3#Fondo_UI");
+    background-size: 100% 100%;
+}
+
+.botones {
+    flex-grow: 0;
+    width: 400px;
+    height: 30%;
+    left: 120px;
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.botones_respuesta {
+    background-color: rgba(132, 132, 132, 0.2);
+    font-size: 50px;
+    -unity-text-align: middle-center;
+    width: 35%;
+    height: 35%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: rgb(0, 236, 49);
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.botones_respuesta:hover {
+    font-size: 55px;
+    background-color: rgb(0, 142, 188);
+    color: rgb(255, 255, 255);
+    width: 50%;
+    height: 42%;
+}
+
+.pregunta {
+    align-content: center;
+    align-self: flex-end;
+    width: 90%;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: rgba(38, 26, 53, 0.57);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-right-width: 0;
+    border-top-right-radius: 20px;
+    top: 20px;
+    min-width: 90%;
+    max-width: 90%;
+    right: 5%;
+}
+
+.pregunta_Label {
+    color: rgb(2, 218, 47);
+    font-size: 50px;
+    -unity-font-style: bold;
+    width: auto;
+    align-content: center;
+    align-self: center;
+}
+
+.respuestacorrecta {
+    translate: 300% 0;
+    transition-duration: 0.5s;
+    padding-left: 0;
+    min-width: 50%;
+    max-width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.respuestaCorrecta-activa {
+    translate: 30% 0;
+    transition-duration: 0.2s;
+}
+
+.cerrar {
+    width: 10%;
+    height: 10%;
+    flex-grow: 0;
+    flex-direction: column;
+    left: 89%;
+    transition-duration: 0.2s;
+    top: 5px;
+    background-image: url("project://database/Assets/UI/Texturas%20UI/Salir.png?fileID=2800000&guid=768d9e6927ae04647af4fecbbbb11060&type=3#Salir");
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.cerrar:hover {
+    background-size: 80% 80%;
+    background-color: rgb(55, 3, 3);
+    width: 8%;
+    height: 5%;
+}
+
+.contenedor_Botones {
+    flex-grow: 1;
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    left: 12%;
+    top: 4%;
+}
+
+.contenedor_tiempo {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 15%;
+    min-height: 15%;
+    max-height: 15%;
+    align-self: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.tiempo {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    border-bottom-left-radius: 1px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-width: 5px;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-left-width: 5px;
+}
+
+.correcto {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    translate: 0 0%;
+    transition-duration: 0.2s;
+    background-image: url("project://database/Assets/UI/Texturas%20UI/Fondo_correcto.png?fileID=2800000&guid=40fda889b69f9594e8c2f3b2d8f48cb1&type=3#Fondo_correcto");
+}
+
+.correcto_activo {
+    translate: 0 -100%;
+}
+
+.incorrecto {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    translate: 0 0%;
+    transition-duration: 0.2s;
+    background-image: url("project://database/Assets/UI/Texturas%20UI/Acceso_Denegado.png?fileID=2800000&guid=150759c56d96f6a4589b3b152a73446a&type=3#Acceso_Denegado");
+    background-size: 100% 50%;
+}
+
+.incorrecto_activo {
+    translate: 0 -200%;
+}
+
+.reiniciar {
+    background-image: url("project://database/Assets/UI/Texturas%20UI/Reintentar.png?fileID=2800000&guid=7795a51b818909748b9bf3b121d9f090&type=3#Reintentar");
+    background-size: 120% 140%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.objeto_Conseguido {
+    background-size: 100% 100%;
+    width: 35%;
+    height: 35%;
+    min-width: 35%;
+    min-height: 35%;
+    max-width: 35%;
+    max-height: 35%;
+    background-color: rgba(0, 0, 0, 0.77);
+    left: 33%;
+    top: 15%;
+}

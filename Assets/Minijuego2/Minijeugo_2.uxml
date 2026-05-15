@@ -1,0 +1,31 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Minijuego2/Minijuego_2.uss?fileID=7433441132597879392&amp;guid=d0b60f93f333a6d41a79ad51757ac13b&amp;type=3#Minijuego_2"/>
+    <ui:VisualElement name="Padre" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="Contenedor_Principal" class="contenedor_Princiapl" style="flex-grow: 1; flex-shrink: 1; flex-wrap: nowrap; flex-direction: row;">
+            <ui:VisualElement name="Contenedor_Menu" class="contenedor_Menu" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.72); background-image: none;">
+                <ui:Image name="Image" style="background-image: url(&quot;project://database/Assets/Textur/Objects/Regadera/_Regadera_1.png?fileID=2800000&amp;guid=ca9dee4c67499ea47aee908860200ffe&amp;type=3#_Regadera_1&quot;); top: auto; height: 60%; width: 100%; min-width: 100%; max-width: 100%; min-height: 60%; max-height: 60%;"/>
+                <ui:Label text="Presiona C&#10;" style="font-size: 20px; color: rgb(255, 255, 255); align-content: auto; align-self: auto; justify-content: flex-end;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Contenedor_Objetivos" class="contenedor_Info" style="flex-grow: 1;">
+                <ui:Image name="Estado_Mision1" class="mision_Pendiemite objetivo_Mision_Oculto"/>
+                <ui:Label text="" name="Mision1" enable-rich-text="false" class="objetivo_Mision"/>
+                <ui:Image name="Estado_Mision2" class="mision_Pendiemite objetivo_Mision_Oculto"/>
+                <ui:Label text="" name="Mision2" class="objetivo_Mision objetivo_Mision_Oculto"/>
+                <ui:Image name="Estado_Mision3" class="mision_Pendiemite objetivo_Mision_Oculto"/>
+                <ui:Label text="" name="Mision3" class="objetivo_Mision objetivo_Mision_Activo objetivo_Mision_Oculto"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Interacciones" class="interaccion" style="flex-grow: 1;">
+                <ui:Label text="Precione E " name="LB_Interaccion" class="interacciones_Texto"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Contenedor_Minijuego" class="contenedor_Minijuego" style="flex-grow: 1;">
+            <ui:ProgressBar value="2" title="" name="Barra_Progreso" class="Barra_Progreso"/>
+            <ui:VisualElement name="Regadera" style="flex-grow: 1; width: 15%; height: 20%; min-width: 15%; min-height: 20%; max-width: 15%; max-height: 20%; bottom: 70%; position: absolute; background-image: url(&quot;project://database/Assets/Minijuego2/Regadera_Completa.png?fileID=2800000&amp;guid=41f394c3e174bb2489defa73e95a8fca&amp;type=3#Regadera_Completa&quot;);"/>
+            <ui:VisualElement name="Zona_Centro" style="flex-grow: 0; width: 10%; height: 20%; min-width: 10%; min-height: 20%; max-width: 10%; max-height: 20%; left: 44%; top: 40%; position: relative; background-color: rgba(99, 99, 99, 0.5); border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px; border-bottom-width: 10px; border-top-width: 10px;"/>
+            <ui:VisualElement name="Estado_Regadre" class="regadera_llena" style="flex-grow: 1;">
+                <ui:Label text="Regadera Vacia" name="LB_Interaccion" style="width: 100%; height: 80%; min-width: 100%; min-height: 80%; max-width: 100%; max-height: 80%; -unity-font-definition: url(&quot;project://database/Assets/BoldPixels/Assets/font/BoldPixels.otf?fileID=12800000&amp;guid=19b9bfe81b147ba4f91b639e7c1b07d9&amp;type=3#BoldPixels&quot;); font-size: 75px; color: rgb(245, 245, 245);"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Faltan_Partes" class="contenedor_Faltan_Partes" style="background-image: url(&quot;project://database/Assets/Minijuego2/Faltan_Partes.png?fileID=2800000&amp;guid=fd17816e088e9cd49987dd6299280a68&amp;type=3#Faltan_Partes&quot;);"/>
+    </ui:VisualElement>
+</ui:UXML>

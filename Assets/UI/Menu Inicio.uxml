@@ -1,0 +1,12 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Menu%20Inicio.uss?fileID=7433441132597879392&amp;guid=2dde8c2484d5eeb47b7a7b674e6e376d&amp;type=3#Menu Inicio"/>
+    <ui:VisualElement name="Contenedor" style="flex-grow: 1;">
+        <ui:VisualElement name="Fondo" picking-mode="Ignore" class="fondo" style="flex-grow: 1;"/>
+        <ui:Button text="" name="Cerrar" class="botonOpciones" style="position: relative; height: 60px; width: 70px; top: 89%; left: 1px; background-image: url(&quot;project://database/Assets/Scenes/Cerrar.jpeg?fileID=21300000&amp;guid=46801b3baf34bd645802716ccfa74c28&amp;type=3#Cerrar&quot;); background-size: 500% 400%;"/>
+        <ui:VisualElement name="Derecha" class="derecha" style="flex-grow: 1;">
+            <ui:Button text="" name="Nueva_Partida" class="botonOpciones" style="top: 40%; background-image: url(&quot;project://database/Assets/Scenes/imagenes%20menu/Nueva%20Partida.png?fileID=21300000&amp;guid=9287eef166d6a7e4fb7579e813a66e84&amp;type=3#Nueva Partida&quot;); background-color: rgba(188, 188, 188, 0); background-position-x: center; background-size: 150% 300%;"/>
+            <ui:Button text="" name="Continuar_Partida" class="botonOpciones" style="top: 40%; background-image: url(&quot;project://database/Assets/Scenes/imagenes%20menu/continuar%20partida%201.png?fileID=21300000&amp;guid=0a917dd14fd30ad4dbdea9f0debb3617&amp;type=3#continuar partida 1&quot;); background-color: rgba(188, 188, 188, 0); background-position-x: center; background-size: 150% 300%;"/>
+            <ui:Button text="" name="Opciones" class="botonOpciones" style="top: 40%; background-image: url(&quot;project://database/Assets/Scenes/imagenes%20menu/opciones%201.png?fileID=21300000&amp;guid=72114af13e79ccc4e963805486a0860d&amp;type=3#opciones 1&quot;); background-color: rgba(188, 188, 188, 0); background-position-x: center; background-size: 150% 300%;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

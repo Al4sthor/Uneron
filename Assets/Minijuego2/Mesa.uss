@@ -1,0 +1,389 @@
+﻿/* ═══════════════════════════════════════════════
+   Mesa.uss  —  Mesa de herrería UI Toolkit
+   Estilo: Cartoon / Colorido
+   ═══════════════════════════════════════════════ */
+
+
+/* ── OVERLAY: cubre toda la pantalla ── */
+.overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* ── PANEL PRINCIPAL ── */
+.tabla_panel {
+    width: 680px;
+    background-color: rgba(42, 21, 5, 0.97);
+    border-width: 3px;
+    border-color: rgb(122, 74, 26);
+    border-radius: 18px;
+    padding: 24px 28px 28px 28px;
+    position: relative;
+    align-items: stretch;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+/* Textura de fondo (asigna tu imagen en el USS o por código) */
+.tabla_BG {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 18px;
+    /* background-image: url("tu-textura.png"); */
+    opacity: 0.08;
+}
+
+
+/* ── TÍTULO ── */
+.mesa_titulo {
+    -unity-font-definition: url("project://database/Assets/BoldPixels/Assets/font/BoldPixels.otf?fileID=12800000&guid=19b9bfe81b147ba4f91b639e7c1b07d9&type=3#BoldPixels");
+    font-size: 32px;
+    color: rgb(232, 192, 112);
+    -unity-text-align: upper-center;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+}
+
+
+/* ── ETIQUETAS DE SECCIÓN ── */
+.seccion_label {
+    font-size: 11px;
+    color: rgba(200, 150, 60, 0.65);
+    -unity-text-align: upper-center;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+
+/* ── SEPARADOR ── */
+.separador {
+    height: 2px;
+    background-color: rgba(122, 74, 26, 0.5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 1px;
+}
+
+
+/* ════════════════════════════════
+   SECCIÓN ENSAMBLAJE
+════════════════════════════════ */
+.seccion_ensamblaje {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fila de slots */
+.slots_row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 18px;
+}
+
+/* Contenedor individual de slot (slot + etiqueta debajo) */
+.slot_container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+/* Slot de craft vacío */
+.craft_slot {
+    width: 100px;
+    height: 100px;
+    border-width: 2px;
+    border-color: rgba(180, 120, 50, 0.55);
+    /* border-style dashed no existe en UI Toolkit, simulamos con color y borde */
+    border-radius: 10px;
+    background-color: rgba(80, 45, 10, 0.18);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition-duration: 0.15s;
+    transition-property: background-color, border-color;
+}
+
+/* Cuando una pieza ha sido colocada (añadir clase por código) */
+.craft_slot--filled {
+    border-color: rgba(76, 175, 80, 0.7);
+    background-color: rgba(76, 175, 80, 0.12);
+    border-width: 2px;
+}
+
+/* Cuando el cursor está encima durante drag (añadir clase por código) */
+.craft_slot--hover {
+    border-color: rgb(255, 216, 77);
+    background-color: rgba(255, 216, 77, 0.1);
+}
+
+/* Ícono dentro del slot vacío */
+.slot_icon_empty {
+    width: 60px;
+    height: 60px;
+    /* Aquí irá la imagen de la pieza cuando esté colocada */
+}
+
+/* Signo ? del slot vacío */
+.slot_hint {
+    font-size: 28px;
+    color: rgba(180, 120, 50, 0.45);
+    -unity-text-align: middle-center;
+    position: absolute;
+}
+
+/* Etiqueta debajo del slot */
+.slot_label {
+    font-size: 11px;
+    color: rgba(200, 150, 60, 0.65);
+    -unity-text-align: upper-center;
+    margin-top: 6px;
+}
+
+/* Conector + y = entre slots */
+.conector_label {
+    font-size: 24px;
+    color: rgba(200, 150, 60, 0.45);
+    -unity-text-align: middle-center;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 18px; /* bajar para alinear con centro del slot */
+}
+
+
+/* ── SLOT RESULTADO ── */
+.resultado_slot {
+    width: 110px;
+    height: 110px;
+    border-width: 2px;
+    border-color: rgba(200, 150, 60, 0.3);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Cuando la regadera está completa (añadir clase por código) */
+.resultado_slot--completo {
+    border-color: rgba(100, 200, 100, 0.7);
+    background-color: rgba(76, 175, 80, 0.08);
+    border-width: 2px;
+}
+
+/* Imagen de la regadera final */
+.resultado_icon {
+    width: 90px;
+    height: 90px;
+    /* background-image: url("tu-regadera-final.png"); */
+    background-size: contain;
+    scale: 1 1;
+    transition-duration: 0.4s;
+    transition-property: scale, opacity;
+}
+
+/* Hint ? del resultado */
+.resultado_hint {
+    font-size: 28px;
+    color: rgba(180, 120, 50, 0.4);
+    -unity-text-align: middle-center;
+    position: absolute;
+}
+
+/* Etiqueta especial del resultado */
+.resultado_label {
+    color: rgba(160, 220, 160, 0.75);
+}
+
+/* Flash de destello (cubre todo el slot) */
+.flash_overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255, 240, 100, 0.95);
+    border-radius: 12px;
+    opacity: 0;
+    /* La animación se controla por código C# con IEnumerator */
+}
+
+
+/* ── BOTÓN ENSAMBLAR ── */
+.btn_ensamblar {
+    -unity-font-definition: url("project://database/Assets/BoldPixels/Assets/font/BoldPixels.otf?fileID=12800000&guid=19b9bfe81b147ba4f91b639e7c1b07d9&type=3#BoldPixels");
+    font-size: 18px;
+    color: rgb(58, 31, 0);
+    background-color: rgb(200, 133, 26);
+    border-color: rgb(160, 100, 10);
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px 36px;
+    margin-top: 4px;
+    transition-duration: 0.12s;
+    transition-property: background-color, scale;
+}
+
+.btn_ensamblar:hover {
+    background-color: rgb(230, 168, 50);
+    scale: 1.04 1.04;
+}
+
+.btn_ensamblar:active {
+    background-color: rgb(170, 110, 15);
+    scale: 0.97 0.97;
+}
+
+/* Deshabilitado (añadir :disabled o clase por código) */
+.btn_ensamblar--disabled {
+    opacity: 0.4;
+}
+
+
+/* ── MENSAJE DE ESTADO ── */
+.status_msg {
+    font-size: 13px;
+    color: rgba(200, 150, 60, 0.7);
+    -unity-text-align: upper-center;
+    margin-top: 10px;
+    min-height: 18px;
+}
+
+
+/* ════════════════════════════════
+   SECCIÓN INVENTARIO
+════════════════════════════════ */
+.seccion_inventario {
+    flex-direction: column;
+    align-items: center;
+}
+
+.inventario_row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+
+/* ── TARJETA DE PIEZA ── */
+.pieza_item {
+    width: 160px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(180, 120, 50, 0.4);
+    border-width: 1.5px;
+    border-radius: 12px;
+    padding: 14px 10px 12px 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    transition-duration: 0.15s;
+    transition-property: background-color, border-color;
+}
+
+.pieza_item:hover {
+    background-color: rgba(255, 255, 255, 0.09);
+    border-color: rgba(232, 192, 112, 0.6);
+}
+
+/* Cuando la pieza ya fue colocada */
+.pieza_item--colocada {
+    opacity: 0.35;
+}
+
+/* Ícono de la pieza (asigna background-image por USS o por código C#) */
+.pieza_icon {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 8px;
+}
+
+/* Clases específicas para asignar imágenes de cada pieza */
+.pieza_icon_cuerpo {
+    background-image: url("Assets/Minijuego2gadera/Tanque_de_Regadera.png"); 
+}
+
+.pieza_icon_manguera {
+    background-image: url("Assets/Minijuego2/Boca_regadera.png");
+}
+
+.pieza_icon_alcachofa {
+    background-image: url("Assets/Minijuego2/Sprites/Mango_de_regadera.png");
+}
+
+/* Nombre de la pieza */
+.pieza_nombre {
+    -unity-font-definition: url("project://database/Assets/BoldPixels/Assets/font/BoldPixels.otf?fileID=12800000&guid=19b9bfe81b147ba4f91b639e7c1b07d9&type=3#BoldPixels");
+    font-size: 15px;
+    color: rgb(232, 192, 112);
+    -unity-text-align: upper-center;
+    margin-bottom: 4px;
+}
+
+/* Descripción breve */
+.pieza_desc {
+    font-size: 11px;
+    color: rgba(200, 170, 100, 0.6);
+    -unity-text-align: upper-center;
+    white-space: normal;
+    margin-bottom: 10px;
+}
+
+/* Botón Colocar */
+.btn_colocar {
+    font-size: 12px;
+    color: rgb(58, 31, 0);
+    background-color: rgba(200, 133, 26, 0.85);
+    border-color: rgb(160, 100, 10);
+    border-width: 1.5px;
+    border-radius: 8px;
+    padding: 5px 18px;
+    transition-duration: 0.12s;
+    transition-property: background-color, scale;
+}
+
+.btn_colocar:hover {
+    background-color: rgb(230, 168, 50);
+    scale: 1.05 1.05;
+}
+
+.btn_colocar:active {
+    scale: 0.96 0.96;
+}
+
+.btn_colocar--disabled {
+    opacity: 0.35;
+}
+
+
+/* ── BOTÓN CERRAR (X) ── */
+.btn_cerrar {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+    color: rgba(200, 150, 60, 0.8);
+    background-color: rgba(80, 45, 10, 0.4);
+    border-color: rgba(180, 120, 50, 0.45);
+    border-width: 1.5px;
+    border-radius: 8px;
+    -unity-text-align: middle-center;
+    padding: 0;
+    transition-duration: 0.12s;
+    transition-property: background-color;
+}
+
+.btn_cerrar:hover {
+    background-color: rgba(180, 50, 30, 0.55);
+    border-color: rgba(200, 80, 60, 0.7);
+}

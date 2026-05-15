@@ -1,0 +1,70 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Minijuego2/Mesa.uss?fileID=7433441132597879392&amp;guid=ef6fb455efa1a294695520999a5d8801&amp;type=3#Mesa"/>
+    <ui:VisualElement name="overlay" class="overlay">
+        <ui:VisualElement name="tabla_panel" class="tabla_panel">
+            <ui:VisualElement name="tabla_BG" class="tabla_BG"/>
+            <ui:Label name="mesa_titulo" text="Mesa de Herrería" class="mesa_titulo"/>
+            <ui:VisualElement name="seccion_ensamblaje" class="seccion_ensamblaje">
+                <ui:Label text="ENSAMBLAJE" class="seccion_label"/>
+                <ui:VisualElement name="slots_row" class="slots_row">
+                    <ui:VisualElement name="slot_container_0" class="slot_container">
+                        <ui:VisualElement name="craft_slot_0" class="craft_slot">
+                            <ui:VisualElement name="slot_icon_0" class="slot_icon_empty"/>
+                            <ui:Label name="slot_hint_0" text="?" class="slot_hint"/>
+                        </ui:VisualElement>
+                        <ui:Label text="Cuerpo" class="slot_label"/>
+                    </ui:VisualElement>
+                    <ui:Label text="+" class="conector_label"/>
+                    <ui:VisualElement name="slot_container_1" class="slot_container">
+                        <ui:VisualElement name="craft_slot_1" class="craft_slot">
+                            <ui:VisualElement name="slot_icon_1" class="slot_icon_empty"/>
+                            <ui:Label name="slot_hint_1" text="?" class="slot_hint"/>
+                        </ui:VisualElement>
+                        <ui:Label text="Boca" class="slot_label"/>
+                    </ui:VisualElement>
+                    <ui:Label text="+" class="conector_label"/>
+                    <ui:VisualElement name="slot_container_2" class="slot_container">
+                        <ui:VisualElement name="craft_slot_2" class="craft_slot">
+                            <ui:VisualElement name="slot_icon_2" class="slot_icon_empty"/>
+                            <ui:Label name="slot_hint_2" text="?" class="slot_hint"/>
+                        </ui:VisualElement>
+                        <ui:Label text="Mango" class="slot_label"/>
+                    </ui:VisualElement>
+                    <ui:Label text="=" class="conector_label"/>
+                    <ui:VisualElement name="slot_container_resultado" class="slot_container">
+                        <ui:VisualElement name="resultado_slot" class="resultado_slot">
+                            <ui:VisualElement name="resultado_icon" class="resultado_icon" style="display: none;"/>
+                            <ui:Label name="resultado_hint" text="?" class="resultado_hint"/>
+                            <ui:VisualElement name="flash_overlay" class="flash_overlay" style="display: none;"/>
+                        </ui:VisualElement>
+                        <ui:Label text="Regadera" class="slot_label resultado_label"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Button name="btn_ensamblar" text="⚒  Ensamblar" class="btn_ensamblar"/>
+                <ui:Label name="status_msg" text="" class="status_msg"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="separador" class="separador"/>
+            <ui:VisualElement name="seccion_inventario" class="seccion_inventario">
+                <ui:Label text="INVENTARIO" class="seccion_label"/>
+                <ui:VisualElement name="inventario_row" class="inventario_row">
+                    <ui:VisualElement name="pieza_cuerpo" class="pieza_item">
+                        <ui:VisualElement name="pieza_cuerpo_icon" class="pieza_icon pieza_icon_cuerpo" style="background-image: url(&quot;project://database/Assets/Minijuego2/Tanque_de_regadera.png?fileID=2800000&amp;guid=c12e18b9b87d8a043b2c1fbe687e4df2&amp;type=3#Tanque_de_regadera&quot;);"/>
+                        <ui:Label text="Cuerpo" class="pieza_nombre"/>
+                        <ui:Button name="btn_colocar_0" text="Colocar" class="btn_colocar"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="pieza_manguera" class="pieza_item">
+                        <ui:VisualElement name="pieza_manguera_icon" class="pieza_icon pieza_icon_manguera" style="background-image: url(&quot;project://database/Assets/Minijuego2/Boca_regadera.png?fileID=2800000&amp;guid=7c665a2471c3d8544b49595f213bba93&amp;type=3#Boca_regadera&quot;);"/>
+                        <ui:Label text="Boca" class="pieza_nombre"/>
+                        <ui:Button name="btn_colocar_1" text="Colocar" class="btn_colocar"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="pieza_alcachofa" class="pieza_item">
+                        <ui:VisualElement name="pieza_alcachofa_icon" class="pieza_icon pieza_icon_alcachofa" style="background-image: url(&quot;project://database/Assets/Minijuego2/Mango_de_regadera.png?fileID=2800000&amp;guid=42eadf21ba4558248a106af01b1a6ce3&amp;type=3#Mango_de_regadera&quot;);"/>
+                        <ui:Label text="Mango" class="pieza_nombre"/>
+                        <ui:Button name="btn_colocar_2" text="Colocar" class="btn_colocar"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button name="btn_cerrar" text="✕" class="btn_cerrar"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

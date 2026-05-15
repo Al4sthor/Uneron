@@ -1,0 +1,31 @@
+.fondo {
+    background-image: url("project://database/Assets/Scenes/imagenes%20menu/menu%20uneron%20.png?fileID=2800000&guid=aa567dd7cab905c478e8b82cf4dc2f10&type=3#menu uneron ");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.derecha {
+    width: 50%;
+    position: relative;
+    left: 49%;
+    top: auto;
+    right: 0;
+    bottom: auto;
+}
+
+.botonOpciones {
+    width: 100%;
+    height: 20%;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.2s;
+}
+
+.botonOpciones:hover {
+    translate: -5% 8%;
+}
