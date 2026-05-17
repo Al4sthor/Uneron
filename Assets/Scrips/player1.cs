@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class Player1 : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class Player1 : MonoBehaviour
     public Minijuego_2 mN;
     public Vida vid;
     public PartesConseguidas[] parteConseguida;
+    public MesaDP mesa;
 
     // ---------------- PUNTAJE ----------------
     public float puntaje;
@@ -337,6 +339,7 @@ public class Player1 : MonoBehaviour
             mN.regaderaConseguida = true;
             mN.objetivos[2].estado_Objetivo3 = true;
             mN.Objetivo_Cumplido();
+            mesa.partesConseguidas = true;
         }
     }
 

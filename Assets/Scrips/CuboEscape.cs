@@ -55,11 +55,17 @@ public class CuboEscape : MonoBehaviour
         {
             recogido = true;
             Debug.Log("¡Tienes la llave!");
+            if (mn.objetivos[2].estado_Objetivo2 == false&& mn.objetivos[1].estado_Objetivo2)
+            {
+                mn.objetivos[2].estado_Objetivo2 = true;
+                mn.Objetivo_Cumplido();
+            }
             if (mn.objetivos[1].estado_Objetivo2 == false )
             { 
                 mn.objetivos[1].estado_Objetivo2 = true;
-                mn.Objetivo_Cumplido();
+                mn.Objetivo_Cumplido();  
             }
+           
 
             // Agregar la llave al inventario del jugador
             Inventario.AgregarLlave(tipoLlave);

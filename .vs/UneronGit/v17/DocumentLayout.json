@@ -1,0 +1,167 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|c:\\users\\kealc\\onedrive\\desktop\\universidad\\ing sowftwar 2\\unerongit\\assets\\minijuego2\\minijuego_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|solutionrelative:assets\\minijuego2\\minijuego_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|c:\\users\\kealc\\onedrive\\desktop\\universidad\\ing sowftwar 2\\unerongit\\assets\\scrips\\gamemanager2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\gamemanager2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\assets\\scrips\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\assets\\minijuego2\\lago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|solutionrelative:assets\\minijuego2\\lago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\assets\\scrips\\cuboescape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\cuboescape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\assets\\scrips\\ui_llave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\ui_llave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\assets\\scrips\\scripts\\cofres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\scripts\\cofres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\assets\\scrips\\player1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\player1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\assets\\uipuzlesyminijuegos\\puezle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E659BB4A-4D40-5182-E6F6-063D6E157BCF}|Assembly-CSharp.csproj|solutionrelative:assets\\uipuzlesyminijuegos\\puezle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameManager2.cs",
+              "DocumentMoniker": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Scrips\\GameManager2.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrips\\GameManager2.cs",
+              "ToolTip": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Scrips\\GameManager2.cs",
+              "RelativeToolTip": "Assets\\Scrips\\GameManager2.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAwwA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T02:56:51.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CuboEscape.cs",
+              "DocumentMoniker": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Scrips\\CuboEscape.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrips\\CuboEscape.cs",
+              "ToolTip": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Scrips\\CuboEscape.cs",
+              "RelativeToolTip": "Assets\\Scrips\\CuboEscape.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwEAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T00:37:35.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cofres.cs",
+              "DocumentMoniker": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Scrips\\Scripts\\Cofres.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrips\\Scripts\\Cofres.cs",
+              "ToolTip": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Scrips\\Scripts\\Cofres.cs",
+              "RelativeToolTip": "Assets\\Scrips\\Scripts\\Cofres.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T00:29:54.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Scrips\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrips\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Scrips\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scrips\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T00:13:25.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UI_Llave.cs",
+              "DocumentMoniker": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Scrips\\UI_Llave.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrips\\UI_Llave.cs",
+              "ToolTip": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Scrips\\UI_Llave.cs",
+              "RelativeToolTip": "Assets\\Scrips\\UI_Llave.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T21:59:18.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Puezle.cs",
+              "DocumentMoniker": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\UIPuzlesYMinijuegos\\Puezle.cs",
+              "RelativeDocumentMoniker": "Assets\\UIPuzlesYMinijuegos\\Puezle.cs",
+              "ToolTip": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\UIPuzlesYMinijuegos\\Puezle.cs",
+              "RelativeToolTip": "Assets\\UIPuzlesYMinijuegos\\Puezle.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T21:55:30.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Minijuego_2.cs",
+              "DocumentMoniker": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Minijuego2\\Minijuego_2.cs",
+              "RelativeDocumentMoniker": "Assets\\Minijuego2\\Minijuego_2.cs",
+              "ToolTip": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Minijuego2\\Minijuego_2.cs",
+              "RelativeToolTip": "Assets\\Minijuego2\\Minijuego_2.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T21:52:27.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lago.cs",
+              "DocumentMoniker": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Minijuego2\\Lago.cs",
+              "RelativeDocumentMoniker": "Assets\\Minijuego2\\Lago.cs",
+              "ToolTip": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Minijuego2\\Lago.cs",
+              "RelativeToolTip": "Assets\\Minijuego2\\Lago.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T01:11:11.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "player1.cs",
+              "DocumentMoniker": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Scrips\\player1.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrips\\player1.cs",
+              "ToolTip": "C:\\Users\\Kealc\\OneDrive\\Desktop\\Universidad\\ING Sowftwar 2\\UneronGit\\Assets\\Scrips\\player1.cs",
+              "RelativeToolTip": "Assets\\Scrips\\player1.cs",
+              "ViewState": "AgIAAEEBAAAAAAAAAAAgwFMBAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T21:51:21.268Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -8,13 +8,13 @@ public class Minijuego_2 : MonoBehaviour
     public Objetivos[] objetivos;
 
     public bool minjuegoActivado = false;
-    public bool interfazActiva =true;
+    public bool interfazActiva = true;
     public Sprite falta_piesas;
     public Sprite semilla;
     public Sprite brote;
     public Sprite germinacion;
     public Sprite flor;
-    int nivel = 0;
+    public int nivel = 0;           // public para que GameManager lo lea
     public bool regaderaCargada = false;
 
     VisualElement regadera;
@@ -31,9 +31,12 @@ public class Minijuego_2 : MonoBehaviour
     Image estado_Mision1;
     Image estado_Mision2;
     Image estado_Mision3;
-    int Nmision = 0;
+    public int Nmision = 0;         // public para que GameManager lo lea
     public int objetivos_Cumplidos = 0;
     public int objetivos_Pendientes = 0;
+    bool objetivo1ya;
+    bool objetivo2ya;
+    bool objetivo3ya;
     VisualElement fondo_minijuego;
     VisualElement interaccion;
     VisualElement regadera_Carga;
@@ -42,7 +45,16 @@ public class Minijuego_2 : MonoBehaviour
 
     private void Start()
     {
+        // ?? Restaurar estado desde GameManager al entrar a la escena ??
+        if (GameManager2.Instance != null)
+            GameManager2.Instance.RestaurarEstado(this);
+
         Actualizar_Objetivos();
+
+        // Restaurar visual del nivel de planta si ya había progreso
+        if (nivel > 0)
+            Nivel_planta();
+
         UnityEngine.Cursor.lockState = CursorLockMode.None;
         UnityEngine.Cursor.visible = true;
     }
@@ -77,6 +89,12 @@ public class Minijuego_2 : MonoBehaviour
         RegistrarEventos();
     }
 
+    // ?? Guardar en GameManager antes de cambiar de escena ???
+    private void OnDisable()
+    {
+        if (GameManager2.Instance != null)
+            GameManager2.Instance.GuardarEstado(this);
+    }
     public void ActivarInteraccion()
     {
         if (interaccion == null) return;
@@ -286,28 +304,34 @@ public class Minijuego_2 : MonoBehaviour
     {
         if (objetivos == null || objetivos.Length == 0) return;
 
-        if (objetivos[Nmision].estado_Objetivo1)
+        if (objetivos[Nmision].estado_Objetivo1 && !objetivo1ya)
         {
             estado_Mision1.AddToClassList("mision_Completada");
             objetivos_Cumplidos++;
+            objetivo1ya = true;
         }
-        if (objetivos[Nmision].estado_Objetivo2)
+        if (objetivos[Nmision].estado_Objetivo2 && !objetivo2ya)
         {
             estado_Mision2.AddToClassList("mision_Completada");
             objetivos_Cumplidos++;
+            objetivo2ya = true;
         }
-        if (objetivos[Nmision].estado_Objetivo3)
+        if (objetivos[Nmision].estado_Objetivo3&& !objetivo3ya)
         {
             estado_Mision3.AddToClassList("mision_Completada");
             objetivos_Cumplidos++;
+            objetivo3ya = true;
         }
 
-        if (objetivos_Cumplidos > 4)
+        if (objetivos_Cumplidos == objetivos_Pendientes)
         {
             Nmision++;
             objetivos_Pendientes = 0;
             objetivos_Cumplidos = 0;
             Actualizar_Objetivos();
+            objetivo1ya = false;
+            objetivo2ya= false;
+            objetivo3ya= false;
         }
     }
 
@@ -331,9 +355,7 @@ public class Minijuego_2 : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-    }
+   
 
     [System.Serializable]
     public class Objetivos
