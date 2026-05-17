@@ -7,6 +7,7 @@ public class Cofres : MonoBehaviour
     public bool ParteConsegida = false;
     private bool jugadorDentro = false;
 
+
     void Start()
     {
         if (uiPuzzle != null)

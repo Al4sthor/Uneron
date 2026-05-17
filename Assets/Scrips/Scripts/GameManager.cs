@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (player.puntaje > 50 && player.puntaje < 100)
+        if (player.puntaje > 200 && player.puntaje < 300)
         {
             animator.SetBool("Nv 2", true);
             animator.SetBool("Nv 1", false);
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
                 mN.Objetivo_Cumplido();
             }
         }
-        if (player.puntaje > 130)
+        if (player.puntaje > 301)
         {
             animator.SetBool("Nv 1", true);
             animator.SetBool("Nv 2", true);
@@ -59,17 +59,6 @@ public class GameManager : MonoBehaviour
         if(textPoints != null)
         {
             textPoints.text = "Points: " + score;
-        }
-
-        if (score > 50 && score < 100)
-        {
-            animator.SetBool("Nv 2", true);
-            animator.SetBool("Nv 1", false);
-        }
-        if (score > 130)
-        {
-            animator.SetBool("Nv 1", true);
-            animator.SetBool("Nv 2", true);
         }
     }
 }

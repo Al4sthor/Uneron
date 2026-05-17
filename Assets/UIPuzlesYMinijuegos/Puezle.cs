@@ -20,7 +20,7 @@ public class Puezle : MonoBehaviour
     VisualElement incorrecto;
     VisualElement panelPregunta;
     ProgressBar time;
-    float time_Max = 10f;
+    float time_Max = 35f;
     float time_actual;
     bool timeActivate = false;
     bool valorRespuesta_1;

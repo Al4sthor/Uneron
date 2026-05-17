@@ -19,6 +19,8 @@ public class UI_Llave : MonoBehaviour
             panel.SetActive(true);
             mN.DesactivarVisibilidad();
             vid.DesactivarVisibilidad();
+            UnityEngine.Cursor.lockState = CursorLockMode.None;
+            UnityEngine.Cursor.visible = true;
 
             // Busca el boton dentro del panel y le asigna Ocultar al click
             Button btn = panel.GetComponentInChildren<Button>();
@@ -36,5 +38,7 @@ public class UI_Llave : MonoBehaviour
             panel.SetActive(false);
         mN.ActivarVisibilidad();
         vid.ActivarVisibilidad();
+        UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+        UnityEngine.Cursor.visible = false;
     }
 }
