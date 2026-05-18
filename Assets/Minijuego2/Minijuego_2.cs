@@ -341,7 +341,7 @@ public class Minijuego_2 : MonoBehaviour
 
         if (nivel == 1)
             fondo_minijuego.style.backgroundImage = new StyleBackground(germinacion.texture);
-
+        if (!objetivos[2].estado_Objetivo1) objetivos[2].estado_Objetivo1 = true;
         if (nivel == 2)
         {
             fondo_minijuego.style.backgroundImage = new StyleBackground(brote.texture);
@@ -350,6 +350,7 @@ public class Minijuego_2 : MonoBehaviour
 
         if (nivel == 3)
         {
+            if (!objetivos[2].estado_Objetivo2) objetivos[2].estado_Objetivo2 = true;
             fondo_minijuego.style.backgroundImage = new StyleBackground(flor.texture);
             fondo_minijuego.style.backgroundColor = Color.blue;
         }

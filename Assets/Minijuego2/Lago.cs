@@ -6,7 +6,7 @@ public class Lago : MonoBehaviour
     public Minijuego_2 mN;
     private bool jugadorDentro = false;
     float tiempoInicio;
-    float duracion = 60f;
+    float duracion = 20f;
 
     void Start()
     {
